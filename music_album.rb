@@ -7,5 +7,11 @@ class MusicAlbum
 
   private
 
-  def can_be_archived?; end
+  def can_be_archived?
+    if @on_spotify == true && can_be_archived? == true
+      true
+    else
+      false
+    end
+  end
 end
