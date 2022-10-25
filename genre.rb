@@ -7,8 +7,9 @@ class Genre
       @id = Random.rand(0...1000)
     end
 
-    add_item(item:Item)
-      
+    add_item(item)
+     @items.push(item)
+     item.genre = self
     end
 
     private
