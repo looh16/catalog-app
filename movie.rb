@@ -1,11 +1,18 @@
-class Movie
-  attr_accessor :silet
+require './item'
 
-  def initialize(silet)
-    @silet = silet
+class Movie < Item
+  attr_accessor :silent
+
+  def initialize(silent)
+    @silent = silet
   end
 
   private
 
-  def can_be_archived?; end
+  def can_be_archived? 
+    if @silent == true || can_be_archived? == true
+  true
+else
+  false
+end
 end
