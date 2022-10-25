@@ -13,4 +13,5 @@ class Author
 
  private
   attr_accessor :id, :items
+  
 end

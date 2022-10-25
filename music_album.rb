@@ -7,6 +7,5 @@ class MusicAlbum
 
   private
 
-  def can_be_archived?
-  end
+  def can_be_archived?; end
 end

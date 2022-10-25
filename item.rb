@@ -16,6 +16,5 @@ class Item
 
   attr_accessor :id, :archived
 
-  def can_be_archived?
-  end
+  def can_be_archived?; end
 end
