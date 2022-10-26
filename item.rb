@@ -26,10 +26,11 @@ class Item
 
   def add_label(label)
     @label = label
-    label.items.push(label)  unless label.items.include?(self)
+    label.items.push(label) unless label.items.include?(self)
   end
 
   private
+
   def can_be_archived?
     current_date = DateTime.now.year.to_i
     if current_date - @publish_date > 10

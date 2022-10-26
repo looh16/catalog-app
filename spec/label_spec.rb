@@ -2,16 +2,16 @@ require_relative '../label'
 require_relative '../item'
 
 describe ('When checking the label') do
- it ('Should return the label title and color') do
+  it ('Should return the label title and color') do
     title = 'Music label'
     color = 'red-blue'
     label = Label.new(title, color)
-    
+
     expect(label.title).to eq(title)
     expect(label.color).to eq(color)
- end
+  end
 
- it ('should add the item to the instance') do
+  it ('should add the item to the instance') do
     title = 'Music label'
     color = 'red-blue'
     label = Label.new(title, color)
@@ -19,6 +19,5 @@ describe ('When checking the label') do
     label.add_item(item)
 
     expect(label.items.length).to be(1)
-
- end
+  end
 end
