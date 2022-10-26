@@ -1,20 +1,18 @@
 require './movie'
 
 class Genre
-    attr_accessor :name
+  attr_reader :id, :items
+  attr_accessor :name
 
-    def initialize(name)
-      @id = Random.rand(0...1000)
-      @name =  name
-      @items = []
-    end
+  def initialize(name)
+    super()
+    @name = name
+    @items = []
+    @id = Random.rand(0...1000)
+  end
 
-    def add_item(item)
-     @items.push(item)
-     item.genre = self
-    end
-
-    private
-
-    attr_accessor :id, :items
+  def add_item(item)
+    @items.push(item)
+    item.add_genre(self)
+  end
 end

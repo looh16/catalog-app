@@ -1,5 +1,5 @@
-require_relative './movies/add_movies'
-require_relative './movies/list_movies'
+require_relative './data/add_movies'
+require_relative './data/list_movies'
 
 class App
   def start_app

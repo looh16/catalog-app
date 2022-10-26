@@ -4,10 +4,9 @@ require './genre'
 require 'date'
 require 'json'
 
-@movies = []
-@genre = []
 
 def add_movie
+
   p 'Is the movie silent? [Y/N]'
   silent_option = gets.chomp.upcase
   case silent_option
@@ -22,33 +21,31 @@ def add_movie
 
   p 'Type Movie genre name'
   genre_name = gets.chomp.upcase
-  genre = Genre.new(genre_name)
+  new_genre = Genre.new(genre_name)
 
   p 'Type publish date in format (YYYY-MM-DD)'
-  publish_date = Date.parse(gets.chomp.upcase)
+  publish_date = gets.chomp
   
   new_movie = Movie.new(silent_option, publish_date)
-  new_genre = genre.add_item(new_movie)
+  new_movie.add_genre(new_genre)
 
-  add_movie_in_json(new_movie, new_genre)
+  add_movie_in_json(new_movie)
+
   p 'Movie Created Successiful'
 
 end
 
-def add_movie_in_json(movie, genre)
-
-  movies = []
+def add_movie_in_json(movie)
   obj = {
-    genre: genre.name,
-    publish_date: movie.publish_date,
+    genre: movie.genre.name, 
+    publish_date: movie.publish_date, 
     is_silent: bool_to_word(movie.silent)
   }
 
-  movies.push(obj)
+  if File.exist?('./storage/movie.json')
+    file = File.open('./storage/movie.json')
 
-  if File.exist?('./data/movie.json')
-    file = File.open('./data/movie.json')
-    File.write('./data/movie.json', JSON.pretty_generate(movies))
+    File.write('./storage/movie.json', JSON.pretty_generate(obj))
   end
 end
 
