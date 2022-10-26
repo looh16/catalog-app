@@ -1,16 +1,15 @@
 class Source
-    attr_accessor :name
+  attr_accessor :name
+  attr_reader :id, :items
 
-    def initialize(name)
+  def initialize(name)
     @id = Random.rand(0...1000)
     @name = name
     @items = []
-    end
+  end
 
-    add_item(item:Item)
-      
-    end
-
-    private
-    attr_accessor :id, :items
+  def add_item(item)
+    @items << item
+    item.add_source(self)
+  end
 end
