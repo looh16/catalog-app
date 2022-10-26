@@ -11,8 +11,9 @@ class Movie < Item
 
   def can_be_archived? 
     if @silent == true || can_be_archived? == true
-  true
-else
-  false
-end
+    true
+  else
+    false
+  end
+ end
 end
