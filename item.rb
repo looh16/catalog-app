@@ -7,8 +7,6 @@ class Item
 
   def initialize(publish_date)
     @id = Random.rand(0...100)
-    # @author = author
-    # @source = source
     @publish_date = DateTime.parse(publish_date).to_date.year.to_i
     @archived = false
   end
@@ -25,6 +23,16 @@ class Item
   def add_label(label)
     @label = label
     label.items.push(label) unless label.items.include?(self)
+  end
+
+  def add_source(source)
+    @source = source
+    source.items.push(source) unless source.items.include?(self)
+  end
+
+  def add_author(author)
+    @author = author
+    author.items.push(author) unless author.items.include?(self)
   end
 
   private
