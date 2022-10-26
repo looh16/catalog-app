@@ -14,9 +14,7 @@ class Item
   end
 
   def move_to_archive
-    if can_be_archived?
-      @archived = true
-    end
+    @archived = true if can_be_archived? == true
   end
 
   def add_genre(genre)
@@ -33,10 +31,6 @@ class Item
 
   def can_be_archived?
     current_date = DateTime.now.year.to_i
-    if current_date - @publish_date > 10
-      true
-    else
-      false
-    end
+    current_date - @publish_date > 10
   end
 end

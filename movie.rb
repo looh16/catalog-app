@@ -4,15 +4,17 @@ class Movie < Item
   attr_accessor :silent
 
   def initialize(silent)
-    @silent = silet
+    super(publish_date)
+    @silent = silent
   end
 
   private
 
   def can_be_archived? 
-    if @silent == true || can_be_archived? == true
-  true
-else
-  false
-end
+
+    if @silent == true || can_be_archived? == true then
+      true
+    else
+      false
+    end
 end
