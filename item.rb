@@ -1,15 +1,18 @@
+
+
 class Item
   attr_accessor :genre, :author,
                 :source, :label, :publish_date
 
-  def initialize(genre, author, source, label, publish_date)
+  def initialize(publish_date)
     @id = Random.rand(0...100)
-    @genre = genre
-    @author = author
-    @source = source
-    @label = label
     @publish_date = publish_date
     @archived = archived
+  end
+
+  def add_genre(genre)
+      @genre = genre
+      genre.items.push(self) unless genre.items.include?(self)
   end
 
   def move_to_archive
