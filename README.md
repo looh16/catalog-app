@@ -42,9 +42,9 @@ git clone https://github.com/looh16/catalog-app
 
 👤 
 
-- GitHub: []()
-- Twitter: []()
-- LinkedIn: []()
+- GitHub: [@markotuya0](https://github.com/markotuya0)
+- Twitter: [@mark_anthonny](https://twitter.com/mark_anthonny)
+- LinkedIn: [@mark-anthonny](https://www.linkedin.com/in/mark-anthonny)
 
 
 ## 🤝 Contributing
