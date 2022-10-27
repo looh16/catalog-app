@@ -1,7 +1,14 @@
 [
   {
     "multiplayer": false,
-    "last_played_at": "12/15/01",
-    "publish_date": "27/12/25"
+    "last_played_at": "13:02:01",
+    "publish_date": "23-01-04",
+    "source_name": "Friend"
+  },
+  {
+    "multiplayer": true,
+    "last_played_at": "20:50:01",
+    "publish_date": "20-01-04",
+    "source_name": "Internet"
   }
 ]
