@@ -8,6 +8,7 @@ class AllMusicAlbums
         albums = JSON.parse(File.read(('./storage/music_album.json')))
         puts 'Published dates'
         albums.each do |album|
+          p ' ----------------------------------------------------------------------------- '
           puts "#{album['publish_date']} , is the album on spotify: #{album['on_spotify']}"
         end
       end
