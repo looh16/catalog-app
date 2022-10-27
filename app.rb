@@ -11,7 +11,6 @@ require './data/list_all_authors'
 require './data/list_all_labels'
 require './data/list_sources'
 
-
 # rubocop:disable  Metrics/CyclomaticComplexity
 
 class App
