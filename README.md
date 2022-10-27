@@ -1,6 +1,6 @@
 # Catalog App.
 
-This is a command line application, alow the user add and list data. All added data is stored in the JSON files.
+This is a command line application, which allows the user to add and list data. All added data is stored in JSON files.
 
 
 ## Built With:
