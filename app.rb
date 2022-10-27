@@ -4,6 +4,7 @@ require './data/add_movies'
 require './data/list_movies'
 require './data/add_book'
 require './data/list_of_books'
+# rubocop:disable  Metrics/CyclomaticComplexity
 
 class App
   def start_app
@@ -21,3 +22,4 @@ class App
     end
   end
 end
+# rubocop:enable Metrics/CyclomaticComplexity
