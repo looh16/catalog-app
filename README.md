@@ -29,9 +29,9 @@ git clone https://github.com/looh16/catalog-app
 ## Authors
 👤 Custodio Serafim
 
-- GitHub: [@looh16](https://github.com/looh16/Hello-Microverse)
+- GitHub: [@looh16](https://github.com/looh16)
 - Twitter: [@looh16](https://twitter.com/custodiolanga1)
-- LinkedIn: [@looh16](https://www.linkedin.com/in/custodio-serafim-2a318a23a) 
+- LinkedIn: [@looh16](https://www.linkedin.com/in/custodio-serafim) 
 
 👤 
 
