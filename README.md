@@ -1,47 +1,64 @@
-# curriculum-databases-projects-template
+# Catalog App.
 
-> This template should be used for database related projects at Microverse.
-> Generate your own repository, update this README and edit all files content while working on projects. You should not be adding any new files unless asked otherwise.
+This is a command line application, which allows the user to add and list data. All added data is stored in JSON files.
 
+
+## Built With:
+
+- Ruby
+
+
+To get a local copy up and running follow these simple steps.
 
 ## Getting Started
 
-This repository includes files with plain SQL that can be used to recreate a database:
+### Prerequisites
+- Ruby version 3 or higher.
 
-- Use [schema.sql](./schema.sql) to create all tables.
-- Use [data.sql](./data.sql) to populate tables with sample data.
-- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
+## Setup
+
+### Clone this repository
+git clone https://github.com/looh16/catalog-app
+
+
+### Run project
+- cd catalog-app
+- ruby main.rb
 
 
 ## Authors
+👤 
 
-👤 **Author1**
+- GitHub: [@looh16](https://github.com/looh16)
+- Twitter: [@looh16](https://twitter.com/custodiolanga1)
+- LinkedIn: [@looh16](https://www.linkedin.com/in/custodio-serafim) 
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+👤 
 
-👤 **Author2**
+- GitHub: []()
+- Twitter: []()
+- LinkedIn: []()
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+👤 
+
+- GitHub: []()
+- Twitter: []()
+- LinkedIn: []()
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome!
+Contributions, [Issues](https://github.com/looh16/catalog-app/issues), and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the issues page.
 
 ## Show your support
-
 Give a ⭐️ if you like this project!
+
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- [Microverse](https://www.microverse.org/)
+
 
 ## 📝 License
 
