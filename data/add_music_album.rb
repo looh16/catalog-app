@@ -3,10 +3,10 @@ require 'json'
 
 class AddMusicAlbum
   def add_music_album
-    puts 'Enter the publish date:'
+    puts 'Enter the publish date (YY-MM-DD):'
     publish_date = gets.chomp
 
-    puts 'Is the music album on Spotify? [Y/N]'
+    puts 'Is the music album on Spotify? [y/n]:'
     on_spotify = gets.chomp.upcase
     spotify = false
     spotify = true if on_spotify == 'Y'

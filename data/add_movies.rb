@@ -5,7 +5,7 @@ require 'date'
 require 'json'
 
 def add_movie
-  p 'Is the movie silent? [Y/N]'
+  p 'Is the movie silent? [y/n]:'
   silent_option = gets.chomp.upcase
   case silent_option
   when 'y', 'Y'
@@ -13,15 +13,15 @@ def add_movie
   when 'n', 'N'
     silent_option = false
   else
-    p "Error: The value (#{silent_option}) is invalide. Type Y or N"
+    p "Error: The value (#{silent_option}) is invalide. Type [y/n]:"
     return
   end
 
-  p 'Type Movie genre name'
+  p 'Type Movie genre name:'
   genre_name = gets.chomp.upcase
   new_genre = Genre.new(genre_name)
 
-  p 'Type publish date in format (YYYY-MM-DD)'
+  p 'Type publish date in format (YY-MM-DD):'
   publish_date = gets.chomp
 
   new_movie = Movie.new(silent_option, publish_date)

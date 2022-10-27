@@ -3,11 +3,11 @@ require 'json'
 
 class AddBook
   def add_book
-    puts 'Enter book pusher (author)'
+    puts 'Enter book pusher (author):'
     publish = gets.capitalize.chomp
-    puts 'Enter book pusher cover_state'
+    puts 'Enter book pusher cover_state:'
     coverstate = gets.capitalize.chomp
-    puts 'Enter book publish date'
+    puts 'Enter book publish date (YY-MM-DD):'
     publishdate = gets.chomp
 
     book = Book.new(publish, coverstate, publishdate)
