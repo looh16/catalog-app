@@ -27,7 +27,7 @@ git clone https://github.com/looh16/catalog-app
 
 
 ## Authors
-👤 Custodio Serafim
+👤 
 
 - GitHub: [@looh16](https://github.com/looh16)
 - Twitter: [@looh16](https://twitter.com/custodiolanga1)
