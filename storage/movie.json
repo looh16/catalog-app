@@ -1,17 +1,12 @@
 [
   {
     "genre": "ACTION",
-    "publish_year": 2020,
+    "publish_year": "2020-01-04",
     "is_silent": "Yes"
   },
   {
     "genre": "HORROR",
-    "publish_year": 2020,
+    "publish_year": "2020-02-04",
     "is_silent": "No"
-  },
-  {
-    "genre": "DRAMA",
-    "publish_year": 2020,
-    "is_silent": "Yes"
   }
 ]

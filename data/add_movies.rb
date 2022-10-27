@@ -27,6 +27,7 @@ def add_movie
   new_movie = Movie.new(silent_option, publish_date)
   new_movie.add_genre(new_genre)
 
+  add_genre_in_json(new_genre)
   add_movie_in_json(new_movie)
 
   p 'Movie Created Successiful'
@@ -52,6 +53,26 @@ def add_movie_in_json(movie)
   file.close
 
   File.write('./storage/movie.json', JSON.pretty_generate(mov))
+end
+
+def add_genre_in_json(genre)
+  obj = {
+    name: genre.name
+  }
+
+  File.exist?('./storage/genre.json') unless File.exist?('./storage/genre.json')
+  file = File.open('./storage/genre.json')
+
+  if file.size.zero?
+    ger = [obj]
+  else
+    ger = JSON.parse(File.read('./storage/genre.json'))
+    ger << obj
+  end
+
+  file.close
+
+  File.write('./storage/genre.json', JSON.pretty_generate(ger))
 end
 
 def bool_to_word(bool)
