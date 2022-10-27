@@ -13,6 +13,8 @@ To get a local copy up and running follow these simple steps.
 
 ## Getting Started
 
+[Video demo app](https://youtu.be/fQIOILk6zSM)
+
 ### Prerequisites
 - Ruby version 3 or higher.
 
