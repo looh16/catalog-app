@@ -1,12 +1,12 @@
 require 'json'
 
 def list_genres
-  if File.exist?('./storage/genre.json')
-    genre_list = JSON.parse(File.read('./storage/genre.json'))
+  if File.exist?('./storage/source.json')
+    source_list = JSON.parse(File.read('./storage/source.json'))
 
-    genre_list.each do |genre|
+    source_list.each do |source|
       p ' ------------------------------------------------------------------------------ '
-      p genre['name']
+      p source['name']
     end
   else
     []
