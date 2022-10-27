@@ -3,5 +3,30 @@
     "publisher": "John doe",
     "cover_state": "The paradise",
     "publish_date": "27/10/2022"
+  },
+  {
+    "publisher": "Microsoft",
+    "cover_state": "The vaguuon",
+    "publish_date": "2020/02/23"
+  },
+  {
+    "publisher": "Universal",
+    "cover_state": "Europe",
+    "publish_date": "2015-05-26"
+  },
+  {
+    "publisher": "Universal",
+    "cover_state": "World",
+    "publish_date": "2012/12/20"
+  },
+  {
+    "publisher": "Tesla",
+    "cover_state": "Hello world",
+    "publish_date": "2023-05-12"
+  },
+  {
+    "publisher": "Bill gate",
+    "cover_state": "Universal",
+    "publish_date": "2023/10/12"
   }
 ]
