@@ -15,6 +15,6 @@ class Game < Item
     current_date = DateTime.now.year
     gap = current_date - @last_played_at.to_i
 
-    can_be_archived? == true && gap > 2
+    super && gap > 2
   end
 end

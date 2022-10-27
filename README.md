@@ -37,12 +37,13 @@ git clone https://github.com/looh16/catalog-app
    - Twitter:[@pamphilemkp](https://Twitter.com/PamphileMusonda)
    - LinkedIn:[@pamphilemkp](https://www.linkedin.com/in/pamphile-musonda)
 
-👤 
+👤 **Custodio Serafim**
+
 - GitHub: [@looh16](https://github.com/looh16)
 - Twitter: [@looh16](https://twitter.com/custodiolanga1)
 - LinkedIn: [@looh16](https://www.linkedin.com/in/custodio-serafim) 
 
-👤 
+👤 **Mark**
 
 - GitHub: [@markotuya0](https://github.com/markotuya0)
 - Twitter: [@mark_anthonny](https://twitter.com/mark_anthonny)
