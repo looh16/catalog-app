@@ -28,7 +28,7 @@ class AddMusicAlbum
         music_obj << album_obj
       end
     else
-      File.write('./storage/music_album.json')
+      File.write('./storage/music_album.json', '')
     end
 
     File.write('./storage/music_album.json', JSON.pretty_generate(music_obj))
